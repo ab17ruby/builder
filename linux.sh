@@ -11,11 +11,11 @@ fancy_echo() {
 }
 
 ## Distro check
-if ! grep -qiE 'trusty|precise|utopic|wheezy|jessie|xenial|yakkety' /etc/os-release
-then
-  fancy_echo "Sorry! we don't currently support that distro."
-  exit 1
-fi
+#if ! grep -qiE 'trusty|precise|utopic|wheezy|jessie|xenial|yakkety' /etc/os-release
+#then
+#  fancy_echo "Sorry! we don't currently support that distro."
+#  exit 1
+#fi
 
 ## Debian-Ubuntu package update
 fancy_echo "Updating system packages ..."
